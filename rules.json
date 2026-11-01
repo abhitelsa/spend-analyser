@@ -1,127 +1,498 @@
 [
-  { "keyword": "transfer to", "domain": "Transfers" },
-  { "keyword": "received from", "domain": "Transfers" },
-  { "keyword": "paid to abhishek", "domain": "Transfers" },
-  { "keyword": "paid to t t", "domain": "Transfers" },
-  { "keyword": "received from t t", "domain": "Transfers" },
-  { "keyword": "bbps payment received", "domain": "Transfers" },
-  { "keyword": "cred club", "domain": "Transfers" },
-
-  { "keyword": "mutual fund", "domain": "Investment" },
-  { "keyword": "hdfc mutual fund", "domain": "Investment" },
-  { "keyword": "groww", "domain": "Investment" },
-  { "keyword": "zerodha", "domain": "Investment" },
-  { "keyword": "uti mutual", "domain": "Investment" },
-  { "keyword": "term insurance premium", "domain": "Investment" },
-
-  { "keyword": "zepto", "domain": "Grocery" },
-  { "keyword": "zeptonow", "domain": "Grocery" },
-  { "keyword": "blinkit", "domain": "Grocery" },
-  { "keyword": "open mart", "domain": "Grocery" },
-  { "keyword": "s r s provision", "domain": "Grocery" },
-  { "keyword": "provision", "domain": "Grocery" },
-  { "keyword": "dairy wealth", "domain": "Grocery" },
-  { "keyword": "vegitable", "domain": "Grocery" },
-  { "keyword": "vegetable", "domain": "Grocery" },
-  { "keyword": "fruits", "domain": "Grocery" },
-  { "keyword": "flipkart minutes", "domain": "Grocery" },
-
-  { "keyword": "tata 1mg", "domain": "Medicine" },
-  { "keyword": "1mg", "domain": "Medicine" },
-  { "keyword": "nova ivf", "domain": "Medicine" },
-  { "keyword": "rhea healthcare", "domain": "Medicine" },
-  { "keyword": "shree maitri diagnostics", "domain": "Medicine" },
-  { "keyword": "diagnostic", "domain": "Medicine" },
-  { "keyword": "medical", "domain": "Medicine" },
-  { "keyword": "sri veer teja medical", "domain": "Medicine" },
-  { "keyword": "thirumala medical", "domain": "Medicine" },
-  { "keyword": "hospital", "domain": "Medicine" },
-  { "keyword": "healthcare", "domain": "Medicine" },
-  { "keyword": "pharmacy", "domain": "Medicine" },
-  { "keyword": "apollo", "domain": "Medicine" },
-
-  { "keyword": "zomato", "domain": "Food" },
-  { "keyword": "swiggy", "domain": "Food" },
-  { "keyword": "bistro", "domain": "Food" },
-  { "keyword": "chai point", "domain": "Food" },
-  { "keyword": "fast food", "domain": "Food" },
-  { "keyword": "new navee fast food", "domain": "Food" },
-  { "keyword": "navee", "domain": "Food" },
-  { "keyword": "paratha house", "domain": "Food" },
-  { "keyword": "paratha", "domain": "Food" },
-  { "keyword": "aahara bhavan", "domain": "Food" },
-  { "keyword": "aahara", "domain": "Food" },
-  { "keyword": "poha on wheels", "domain": "Food" },
-  { "keyword": "poha", "domain": "Food" },
-  { "keyword": "hassan thindi mane", "domain": "Food" },
-  { "keyword": "thindi", "domain": "Food" },
-  { "keyword": "vadapav baji", "domain": "Food" },
-  { "keyword": "vadapav", "domain": "Food" },
-  { "keyword": "gudgudi", "domain": "Food" },
-  { "keyword": "gongura", "domain": "Food" },
-  { "keyword": "paradise food court", "domain": "Food" },
-  { "keyword": "paradise", "domain": "Food" },
-  { "keyword": "md hospitality", "domain": "Food" },
-  { "keyword": "hospitality", "domain": "Food" },
-  { "keyword": "sri krishna sagar hotel", "domain": "Food" },
-  { "keyword": "hotel", "domain": "Food" },
-  { "keyword": "ayodhya upachar", "domain": "Food" },
-  { "keyword": "sattvam", "domain": "Food" },
-  { "keyword": "sweet and snacks", "domain": "Food" },
-  { "keyword": "restaurant", "domain": "Food" },
-
-  { "keyword": "hp auto care centre hpcl", "domain": "Petrol" },
-  { "keyword": "hpcl", "domain": "Petrol" },
-  { "keyword": "nn and sons fuel station", "domain": "Petrol" },
-  { "keyword": "s v m fuel station", "domain": "Petrol" },
-  { "keyword": "fuel station", "domain": "Petrol" },
-  { "keyword": "petrol", "domain": "Petrol" },
-  { "keyword": "bpcl", "domain": "Petrol" },
-  { "keyword": "iocl", "domain": "Petrol" },
-  { "keyword": "shell", "domain": "Petrol" },
-
-  { "keyword": "fastag", "domain": "Travel" },
-  { "keyword": "bangalore metro rail", "domain": "Travel" },
-  { "keyword": "metro", "domain": "Travel" },
-  { "keyword": "irctc", "domain": "Travel" },
-  { "keyword": "national highways au", "domain": "Travel" },
-  { "keyword": "toll", "domain": "Travel" },
-  { "keyword": "uber", "domain": "Travel" },
-  { "keyword": "ola", "domain": "Travel" },
-  { "keyword": "bus ticket", "domain": "Travel" },
-
-  { "keyword": "electricity bill", "domain": "Mobile tsky ott" },
-  { "keyword": "electricity", "domain": "Mobile tsky ott" },
-  { "keyword": "dth recharged", "domain": "Mobile tsky ott" },
-  { "keyword": "mobile recharged", "domain": "Mobile tsky ott" },
-  { "keyword": "airtel recharge", "domain": "Mobile tsky ott" },
-  { "keyword": "jio recharge", "domain": "Mobile tsky ott" },
-  { "keyword": "airtel", "domain": "Mobile tsky ott" },
-  { "keyword": "jio", "domain": "Mobile tsky ott" },
-  { "keyword": "jiohotstar", "domain": "Mobile tsky ott" },
-  { "keyword": "hotstar", "domain": "Mobile tsky ott" },
-  { "keyword": "broadband", "domain": "Mobile tsky ott" },
-  { "keyword": "tatasky", "domain": "Mobile tsky ott" },
-  { "keyword": "tata play", "domain": "Mobile tsky ott" },
-
-  { "keyword": "usekiwi infolabs", "domain": "Shopping" },
-  { "keyword": "usekiwi", "domain": "Shopping" },
-  { "keyword": "flipkart", "domain": "Shopping" },
-  { "keyword": "asspl", "domain": "Shopping" },
-  { "keyword": "amazon", "domain": "Shopping" },
-  { "keyword": "myntra", "domain": "Shopping" },
-  { "keyword": "new mobile", "domain": "Shopping" },
-
-  { "keyword": "rent", "domain": "Loan, Rent" },
-  { "keyword": "loan", "domain": "Loan, Rent" },
-  { "keyword": "emi", "domain": "Loan, Rent" },
-
-  { "keyword": "sri maruthi dry cleaners", "domain": "Misc" },
-  { "keyword": "dry clean", "domain": "Misc" },
-  { "keyword": "devi pooja store", "domain": "Misc" },
-  { "keyword": "pooja", "domain": "Misc" },
-  { "keyword": "the 147 snooker academy", "domain": "Misc" },
-  { "keyword": "raju snooker", "domain": "Misc" },
-  { "keyword": "snooker", "domain": "Misc" },
-  { "keyword": "car wiper", "domain": "Misc" }
+  {
+    "keyword": "aahara",
+    "domain": "Food"
+  },
+  {
+    "keyword": "aahara bhavan",
+    "domain": "Food"
+  },
+  {
+    "keyword": "ayodhya upachar",
+    "domain": "Food"
+  },
+  {
+    "keyword": "bistro",
+    "domain": "Food"
+  },
+  {
+    "keyword": "chai point",
+    "domain": "Food"
+  },
+  {
+    "keyword": "CTRLX TECHNOLOGIES PRIVATE LIMITED",
+    "domain": "Food"
+  },
+  {
+    "keyword": "fast food",
+    "domain": "Food"
+  },
+  {
+    "keyword": "gongura",
+    "domain": "Food"
+  },
+  {
+    "keyword": "gudgudi",
+    "domain": "Food"
+  },
+  {
+    "keyword": "hassan thindi mane",
+    "domain": "Food"
+  },
+  {
+    "keyword": "hospitality",
+    "domain": "Food"
+  },
+  {
+    "keyword": "hotel",
+    "domain": "Food"
+  },
+  {
+    "keyword": "md hospitality",
+    "domain": "Food"
+  },
+  {
+    "keyword": "MD HOSPITALITY SERVICES",
+    "domain": "Food"
+  },
+  {
+    "keyword": "navee",
+    "domain": "Food"
+  },
+  {
+    "keyword": "new navee fast food",
+    "domain": "Food"
+  },
+  {
+    "keyword": "paradise",
+    "domain": "Food"
+  },
+  {
+    "keyword": "paradise food court",
+    "domain": "Food"
+  },
+  {
+    "keyword": "paratha",
+    "domain": "Food"
+  },
+  {
+    "keyword": "paratha house",
+    "domain": "Food"
+  },
+  {
+    "keyword": "poha",
+    "domain": "Food"
+  },
+  {
+    "keyword": "poha on wheels",
+    "domain": "Food"
+  },
+  {
+    "keyword": "restaurant",
+    "domain": "Food"
+  },
+  {
+    "keyword": "sattvam",
+    "domain": "Food"
+  },
+  {
+    "keyword": "sri krishna sagar hotel",
+    "domain": "Food"
+  },
+  {
+    "keyword": "sweet and snacks",
+    "domain": "Food"
+  },
+  {
+    "keyword": "swiggy",
+    "domain": "Food"
+  },
+  {
+    "keyword": "thindi",
+    "domain": "Food"
+  },
+  {
+    "keyword": "vadapav",
+    "domain": "Food"
+  },
+  {
+    "keyword": "vadapav baji",
+    "domain": "Food"
+  },
+  {
+    "keyword": "zomato",
+    "domain": "Food"
+  },
+  {
+    "keyword": "blinkit",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "dairy wealth",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "flipkart minutes",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "fruits",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "open mart",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "provision",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "s r s provision",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "vegetable",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "vegitable",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "zepto",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "zeptonow",
+    "domain": "Grocery"
+  },
+  {
+    "keyword": "groww",
+    "domain": "Investment"
+  },
+  {
+    "keyword": "hdfc mutual fund",
+    "domain": "Investment"
+  },
+  {
+    "keyword": "mutual fund",
+    "domain": "Investment"
+  },
+  {
+    "keyword": "term insurance premium",
+    "domain": "Investment"
+  },
+  {
+    "keyword": "uti mutual",
+    "domain": "Investment"
+  },
+  {
+    "keyword": "zerodha",
+    "domain": "Investment"
+  },
+  {
+    "keyword": "emi",
+    "domain": "Loan, Rent"
+  },
+  {
+    "keyword": "loan",
+    "domain": "Loan, Rent"
+  },
+  {
+    "keyword": "rent",
+    "domain": "Loan, Rent"
+  },
+  {
+    "keyword": "1mg",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "apollo",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "diagnostic",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "healthcare",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "hospital",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "medical",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "nova ivf",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "pharmacy",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "rhea healthcare",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "shree maitri diagnostics",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "sri veer teja medical",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "tata 1mg",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "thirumala medical",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "Usekiwi Infolabs Private Limited",
+    "domain": "Medicine"
+  },
+  {
+    "keyword": "car wiper",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "devi pooja store",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "dry clean",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "pooja",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "raju snooker",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "snooker",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "SRI MARUTHI DRY CLEANERS",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "the 147 snooker academy",
+    "domain": "Misc"
+  },
+  {
+    "keyword": "airtel",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "airtel recharge",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "broadband",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "dth recharged",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "electricity",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "electricity bill",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "hotstar",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "jio",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "jio recharge",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "jiohotstar",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "mobile recharged",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "tata play",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "tatasky",
+    "domain": "Mobile tsky ott"
+  },
+  {
+    "keyword": "bpcl",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "fuel station",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "hp auto care centre hpcl",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "hpcl",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "iocl",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "nn and sons fuel station",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "petrol",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "s v m fuel station",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "shell",
+    "domain": "Petrol"
+  },
+  {
+    "keyword": "amazon",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "asspl",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "flipkart",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "myntra",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "new mobile",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "usekiwi",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "usekiwi infolabs",
+    "domain": "Shopping"
+  },
+  {
+    "keyword": "Akshata (Do)",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "bbps payment received",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "cred club",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "paid to abhishek",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "paid to t t",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "received from",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "received from t t",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "transfer to",
+    "domain": "Transfers"
+  },
+  {
+    "keyword": "bangalore metro rail",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "bus ticket",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "D SOMASHEKHAR NAIDU",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "DODDABASAVA",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "fastag",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "HARISH  S",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "irctc",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "metro",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "MURALI R",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "national highways au",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "ola",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "RAJANNA B S",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "toll",
+    "domain": "Travel"
+  },
+  {
+    "keyword": "uber",
+    "domain": "Travel"
+  }
 ]
