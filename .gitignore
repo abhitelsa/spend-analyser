@@ -1,0 +1,12 @@
+# Ignore all sensitive financial files and Excel data
+*.xlsx
+*.xls
+*.csv
+_temp_*
+.temp_*
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spend Analyser</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Personal finance</p>
+          <h1>Spend Analyser</h1>
+        </div>
+        <p class="privacy">Files stay in this browser. Nothing is uploaded to a server.</p>
+      </header>
+
+      <section id="dropzone" class="dropzone" tabindex="0">
+        <input id="file-input" type="file" accept=".xlsx,.xls,.csv" multiple hidden />
+        <div class="dropzone-inner">
+          <strong>Drop Statements or Consolidated Excel</strong>
+          <span>Drop a consolidated Excel OR select PhonePe + HDFC + ICICI files together</span>
+        </div>
+      </section>
+
+      <p id="status" class="status" hidden></p>
+
+      <main id="dashboard" class="dashboard" hidden>
+        <div class="toolbar">
+          <label class="toggle">
+            <input id="exclude-transfers" type="checkbox" checked />
+            Exclude transfers &amp; investments
+          </label>
+          <label class="toggle">
+            <input id="debits-only" type="checkbox" checked />
+            Debits only
+          </label>
+          <select id="mode-filter" class="filter-select" title="Filter by Payment Mode">
+            <option value="all">All Payment Modes</option>
+          </select>
+          <button id="misc-filter" type="button" class="chip-btn" title="Filter transactions needing categorization">
+            ⚠️ Review Misc (<span id="misc-count">0</span>)
+          </button>
+          <div class="toolbar-actions">
+            <button id="export-excel-btn" type="button" class="btn-solid-action" title="Export current dataset with your latest category edits back to Excel">💾 Export Excel</button>
+            <button id="rules-btn" type="button" class="ghost">Rules (<span id="rules-count">0</span>)</button>
+            <button id="clear-btn" type="button" class="ghost">Clear file</button>
+          </div>
+        </div>
+
+        <dialog id="rules-modal" class="modal">
+          <div class="modal-card">
+            <div class="modal-header">
+              <h2>Custom Categorization Rules</h2>
+              <button id="close-rules-btn" type="button" class="close-btn">&times;</button>
+            </div>
+            <p class="modal-desc">Saved locally in your browser. These automatically categorize matching transactions.</p>
+            <form id="add-rule-form" class="rule-form">
+              <input id="rule-keyword" type="text" placeholder="Merchant or keyword (e.g. JANARDHANA)" required />
+              <select id="rule-domain" required></select>
+              <button type="submit" class="btn-solid">Save Rule</button>
+            </form>
+            <div class="rules-list-wrap">
+              <ul id="rules-list" class="rules-list"></ul>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding-top:8px;border-top:1px solid var(--line);">
+              <span style="font-size:12px;color:var(--muted);">Backup or commit your rules to Git:</span>
+              <button id="download-rules-btn" type="button" class="btn-solid" style="background:#3d5a80;">💾 Download rules.json</button>
+            </div>
+          </div>
+        </dialog>
+
+        <section class="kpis" id="kpis"></section>
+
+        <section class="grid-2">
+          <article class="card">
+            <h2>Daily spend</h2>
+            <canvas id="daily-chart" height="220"></canvas>
+          </article>
+          <article class="card">
+            <h2>By category</h2>
+            <canvas id="category-chart" height="220"></canvas>
+          </article>
+        </section>
+
+        <section class="grid-2">
+          <article class="card">
+            <h2>Top merchants</h2>
+            <ol id="merchants" class="rank-list"></ol>
+          </article>
+          <article class="card">
+            <h2>Payment instruments</h2>
+            <ol id="instruments" class="rank-list"></ol>
+          </article>
+        </section>
+
+        <article class="card table-card">
+          <div class="table-head">
+            <h2>Transactions</h2>
+            <input id="search" type="search" placeholder="Search merchant, ID, category…" />
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Details</th>
+                  <th>Category</th>
+                  <th>Type</th>
+                  <th class="num">Amount</th>
+                </tr>
+              </thead>
+              <tbody id="txn-body"></tbody>
+            </table>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
