@@ -5,6 +5,7 @@ const DOMAINS = [
   "Petrol",
   "Shopping",
   "Travel",
+  "Entertainment",
   "Mobile tsky ott",
   "Loan, Rent",
   "Investment",
@@ -19,6 +20,7 @@ const DOMAIN_COLORS = {
   "Petrol": "#b08900",
   "Shopping": "#7a4e7a",
   "Travel": "#3d5a80",
+  "Entertainment": "#8b5cf6",
   "Mobile tsky ott": "#1c7c7d",
   "Loan, Rent": "#8d6e63",
   "Investment": "#4a6fa5",
@@ -107,8 +109,8 @@ const els = {
   instruments: document.getElementById("instruments"),
   txnBody: document.getElementById("txn-body"),
   search: document.getElementById("search"),
-  dailyChart: document.getElementById("daily-chart"),
-  categoryChart: document.getElementById("category-chart"),
+  transfersChart: document.getElementById("transfers-chart"),
+  investmentsChart: document.getElementById("investments-chart"),
   clearBtn: document.getElementById("clear-btn"),
 };
 
@@ -507,7 +509,38 @@ function updateMiscBadge() {
   if (els.miscCount) els.miscCount.textContent = count;
 }
 
+// Render Transfers chart
+function renderTransfersChart() {
+  const transfersTxns = filteredTxns().filter(t => t.category === "Transfers" && t.type === "DEBIT");
+  const byDayMap = new Map();
+  transfersTxns.forEach(t => {
+    const k = dayKey(t.date);
+    byDayMap.set(k, (byDayMap.get(k) || 0) + t.amount);
+  });
+  const pairs = [...byDayMap.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  drawBars(els.transfersChart, pairs);
+}
+
+// Render Investments chart
+function renderInvestmentsChart() {
+  const invTxns = filteredTxns().filter(t => t.category === "Investment" && t.type === "DEBIT");
+  const byDayMap = new Map();
+  invTxns.forEach(t => {
+    const k = dayKey(t.date);
+    byDayMap.set(k, (byDayMap.get(k) || 0) + t.amount);
+  });
+  const pairs = [...byDayMap.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  drawBars(els.investmentsChart, pairs);
+}
+
+// Call new render functions
+const originalRender = render;
 function render() {
+  originalRender();
+  renderTransfersChart();
+  renderInvestmentsChart();
+}
+
   const txns = filteredTxns();
   renderKpis(txns);
 
